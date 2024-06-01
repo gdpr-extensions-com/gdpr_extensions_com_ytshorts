@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace my=GdprExtensionsCom\GdprExtensionsComYoutubeShorts\ViewHelpers}
+
+
+<f:layout name="Default" />
+<f:section name="content">
+    <style type="text/css">
+        /* for widget*/
+
+        #gdpr-extensions-com-cookie-container .gdprInner iframe {
+            height: 100vh;
+            max-height: 500px;
+            margin: 70px 0;
+            max-width: 1020px;
+        }
+
+    </style>
+
+
+
+    <f:if condition="{YoutubeShortsData.gdpr_yts_url}">
+        <div class="gdpr-extensions-com-cookie-container" id="gdpr-extensions-com-cookie-container">
+            <div class="gdprInner" style="width:100%; height:100%;">
+                <iframe class='youtubeplayer' id="go-youtubeshorts-player-<f:format.raw>{YoutubeShortsData.uid}</f:format.raw>"
+                    width="100%" height="100%" src=""
+                    data-src="<f:format.raw>{YoutubeShortsData.gdpr_yts_url}</f:format.raw>?enablejsapi=1&autoplay=<f:format.raw>{YoutubeShortsData.gdpr_yts_autoplay}</f:format.raw>&cc_load_policy=<f:format.raw>{YoutubeShortsData.gdpr_yts_show_captions}</f:format.raw>&iv_load_policy=<f:format.raw>{f:if(condition:'{YoutubeShortsData.gdpr_yts_disable_annotations}',then:'3',else:'1')}</f:format.raw>&disablekb=<f:format.raw>{YoutubeShortsData.gdpr_yts_disable_keyboard}</f:format.raw>&fs=<f:format.raw>{YoutubeShortsData.gdpr_yts_display_fs}</f:format.raw>"
+                    data-2click-service="youtubeshorts" data-2click-type="video" wmode="Opaque" frameborder="0"
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+    </f:if>
+</f:section>
+
+</html>
