@@ -63,6 +63,15 @@
          <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image">
             <source>Background Image</source>
          </trans-unit>
+          <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.ContentMask" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.ContentMask">
+				<source> Customize Content Mask</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeBtn" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeBtn">
+				<source> Customize Button</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeMsg" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.CustomizeMsg">
+				<source> Customize Message</source>
+			</trans-unit>
          <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.cookie_widget_image" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.cookie_widget_image">
             <source>Cookie Widget Image</source>
          </trans-unit>
@@ -84,6 +93,9 @@
          <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color">
             <source>Text Color</source>
          </trans-unit>
+         <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading_color" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.heading_color">
+				<source>Heading Color</source>
+			</trans-unit>
          <trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text_color" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_text_color">
             <source>Button Text Color</source>
          </trans-unit>

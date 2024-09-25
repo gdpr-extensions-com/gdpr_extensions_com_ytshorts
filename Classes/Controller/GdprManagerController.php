@@ -121,6 +121,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
                     'background_image_color' => '', // Default empty string
                     'button_color' => '', // Default empty string
                     'text_color' => '', // Default empty string
+                    'heading_color' => '', // Default empty string
                     'button_shape' => '' // Default empty string
                 ])
                 ->execute();
@@ -223,6 +224,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      */
     public function updateAction(\GdprExtensionsCom\GdprExtensionsComYtshorts\Domain\Model\GdprManager $gdprManager) : \Psr\Http\Message\ResponseInterface
     {
+        $locationsData = [];
         if($this->request->hasArgument('tx_gdprextensionscomytshorts_web_gdprextensionscomytshortsgdprmanager')){
             $locationsData = $this->request->getArgument('tx_gdprextensionscomytshorts_web_gdprextensionscomytshortsgdprmanager')['locations'];
         }

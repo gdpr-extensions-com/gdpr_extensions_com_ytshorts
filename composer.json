@@ -2,6 +2,7 @@
   "name": "gdpr-extensions-com/gdpr-extensions-com-ytshorts",
   "type": "typo3-cms-extension",
   "description": "Add YouTube Shorts videos to your website and stay GDPR compliant! Your website viewers will be able to manage their cookie preferences and view the content only if consented. Stay GDPR compliant when your website is scanned by any Cookie or GDPR Scanner!",
+  "version": "1.0.0",
   "authors": [],
   "license": "GPL-2.0-or-later",
   "require": {

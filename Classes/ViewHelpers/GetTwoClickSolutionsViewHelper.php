@@ -95,6 +95,7 @@ class GetTwoClickSolutionsViewHelper extends AbstractViewHelper
                     'background_image_color' => '', // Default empty string
                     'button_color' => '', // Default empty string
                     'text_color' => '', // Default empty string
+                    'heading_color' => '', // Default empty string
                     'button_shape' => '' // Default empty string
                 ])
                 ->execute();

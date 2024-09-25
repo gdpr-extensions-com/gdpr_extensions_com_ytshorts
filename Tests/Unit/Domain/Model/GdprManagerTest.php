@@ -201,7 +201,26 @@ class GdprManagerTest extends UnitTestCase
 
         self::assertEquals('Conceived at T3CON10', $this->subject->_get('textColor'));
     }
+    /**
+     * @test
+     */
+    public function getHeadingColorReturnsInitialValueForString(): void
+    {
+        self::assertSame(
+            '',
+            $this->subject->getHeadingColor()
+        );
+    }
 
+    /**
+     * @test
+     */
+    public function setHeadingColorForStringSetsHeadingColor(): void
+    {
+        $this->subject->setHeadingColor('Conceived at T3CON10');
+
+        self::assertEquals('Conceived at T3CON10', $this->subject->_get('headingColor'));
+    }
     /**
      * @test
      */
